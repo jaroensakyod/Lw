@@ -1,0 +1,23 @@
+[2021-10-06 16:20:50,446] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: Pipeline.clear_order_detail 2021-10-06T16:20:39.977699+00:00 [queued]>
+[2021-10-06 16:20:50,456] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: Pipeline.clear_order_detail 2021-10-06T16:20:39.977699+00:00 [queued]>
+[2021-10-06 16:20:50,456] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-10-06 16:20:50,456] {taskinstance.py:1068} INFO - Starting attempt 1 of 2
+[2021-10-06 16:20:50,457] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-10-06 16:20:50,467] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): clear_order_detail> on 2021-10-06T16:20:39.977699+00:00
+[2021-10-06 16:20:50,473] {standard_task_runner.py:52} INFO - Started process 193 to run task
+[2021-10-06 16:20:50,476] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'Pipeline', 'clear_order_detail', '2021-10-06T16:20:39.977699+00:00', '--job-id', '5', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/P.py', '--cfg-path', '/tmp/tmpx0e71b1l', '--error-file', '/tmp/tmp9lxpltkl']
+[2021-10-06 16:20:50,476] {standard_task_runner.py:77} INFO - Job 5: Subtask clear_order_detail
+[2021-10-06 16:20:50,510] {logging_mixin.py:104} INFO - Running <TaskInstance: Pipeline.clear_order_detail 2021-10-06T16:20:39.977699+00:00 [running]> on host 8a718b72cb7e
+[2021-10-06 16:20:50,545] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=datath
+AIRFLOW_CTX_DAG_ID=Pipeline
+AIRFLOW_CTX_TASK_ID=clear_order_detail
+AIRFLOW_CTX_EXECUTION_DATE=2021-10-06T16:20:39.977699+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-10-06T16:20:39.977699+00:00
+[2021-10-06 16:20:58,862] {python.py:151} INFO - Done. Returned value was: None
+[2021-10-06 16:20:58,870] {taskinstance.py:1191} INFO - Marking task as SUCCESS. dag_id=Pipeline, task_id=clear_order_detail, execution_date=20211006T162039, start_date=20211006T162050, end_date=20211006T162058
+[2021-10-06 16:20:58,888] {taskinstance.py:1245} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-10-06 16:20:58,910] {local_task_job.py:151} INFO - Task exited with return code 0
